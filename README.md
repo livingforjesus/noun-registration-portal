@@ -1,6 +1,7 @@
 # Registration Portal Monorepo
 
 Turbo monorepo scaffold with:
+
 - `apps/app`: Next.js frontend
 - `apps/api`: Express backend
 - `packages/db`: Drizzle ORM + PostgreSQL
@@ -41,4 +42,3 @@ bun run dev
 
 - App: `http://localhost:3000`
 - API: `http://localhost:8080/health`
-

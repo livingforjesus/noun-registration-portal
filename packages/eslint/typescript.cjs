@@ -10,7 +10,7 @@ module.exports = {
       plugins: ["@typescript-eslint", "unused-imports"],
       extends: [
         "plugin:@typescript-eslint/recommended",
-        "plugin:prettier/recommended"
+        "plugin:prettier/recommended",
       ],
       rules: {
         "@typescript-eslint/no-unused-vars": "off",
@@ -21,10 +21,10 @@ module.exports = {
             vars: "all",
             varsIgnorePattern: "^_",
             args: "after-used",
-            argsIgnorePattern: "^_"
-          }
-        ]
-      }
-    }
-  ]
+            argsIgnorePattern: "^_",
+          },
+        ],
+      },
+    },
+  ],
 };

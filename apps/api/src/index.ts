@@ -20,7 +20,8 @@ app.get("/health/db", async (_req, res) => {
     await db.execute(sql`select 1`);
     res.json({ ok: true, db: "postgres" });
   } catch (error) {
-    const message = error instanceof Error ? error.message : "Unknown database error";
+    const message =
+      error instanceof Error ? error.message : "Unknown database error";
     res.status(500).json({ ok: false, message });
   }
 });

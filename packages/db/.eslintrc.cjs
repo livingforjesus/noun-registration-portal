@@ -1,4 +1,4 @@
 module.exports = {
   root: true,
-  extends: ["@registration-portal/eslint/typescript"]
+  extends: [require.resolve("@registration-portal/eslint/typescript")],
 };

@@ -1,19 +1,28 @@
 import type { Metadata } from "next";
+
 import "./globals.css";
+import { Source_Sans_3 } from "next/font/google";
+
+import { type FC } from "react";
+
+const sourceSans = Source_Sans_3({
+  subsets: ["latin"],
+  weight: ["400", "600", "700", "800"],
+});
 
 export const metadata: Metadata = {
-  title: "Registration Portal",
-  description: "Turbo monorepo: Next.js app + Express API + Drizzle DB"
+  title: "NOUN Registration Portal",
+  description: "Application and Student Management System",
 };
 
-export default function RootLayout({
-  children
-}: Readonly<{
+interface RootLayoutProps {
   children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
-  );
 }
+
+const RootLayout: FC<RootLayoutProps> = ({ children }) => (
+  <html lang="en">
+    <body className={sourceSans.className}>{children}</body>
+  </html>
+);
+
+export default RootLayout;

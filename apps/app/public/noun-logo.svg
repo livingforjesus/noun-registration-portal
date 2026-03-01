@@ -1,0 +1,10 @@
+<svg width="168" height="196" viewBox="0 0 168 196" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="42" y="14" width="84" height="88" rx="16" fill="#11844F"/>
+  <circle cx="84" cy="36" r="17" fill="#F8FBF5"/>
+  <circle cx="84" cy="36" r="10" fill="#E6BE32"/>
+  <path d="M66 62L60 84H108L102 62H66Z" fill="#0E6E40"/>
+  <path d="M62 92C62 92 76 80 84 80C92 80 106 92 106 92V104H62V92Z" fill="#F4F6F7"/>
+  <path d="M22 106C22 95 35 88 53 88H115C133 88 146 95 146 106V121H22V106Z" fill="white" stroke="#F14646" stroke-width="2"/>
+  <text x="84" y="113" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#E13B3B">NATIONAL OPEN UNIVERSITY OF NIGERIA</text>
+  <text x="84" y="162" text-anchor="middle" font-family="Arial, sans-serif" font-size="58" font-weight="700" fill="#11844F">NOUN</text>
+</svg>
