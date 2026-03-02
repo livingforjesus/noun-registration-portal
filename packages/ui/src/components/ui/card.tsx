@@ -1,8 +1,8 @@
 import type { ComponentProps, FC } from "react";
 
-import { cn } from "@registration-portal/ui/utils";
+import { cn } from "@nexus/ui/utils";
 
-interface CardProps extends ComponentProps<"div"> {}
+type CardProps = ComponentProps<"div">;
 
 const Card: FC<CardProps> = ({ className, ...props }) => (
   <div
@@ -15,7 +15,7 @@ const Card: FC<CardProps> = ({ className, ...props }) => (
   />
 );
 
-interface CardContentProps extends ComponentProps<"div"> {}
+type CardContentProps = ComponentProps<"div">;
 
 const CardContent: FC<CardContentProps> = ({ className, ...props }) => (
   <div data-slot="card-content" className={cn("p-0", className)} {...props} />

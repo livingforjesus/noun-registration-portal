@@ -1,5 +1,5 @@
 {
-  "extends": "@registration-portal/tsconfig/node.json",
+  "extends": "@nexus/tsconfig/node.json",
   "compilerOptions": {
     "jsx": "react-jsx",
     "rootDir": "src",

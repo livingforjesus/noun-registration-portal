@@ -3,28 +3,16 @@ import "dotenv/config";
 import cors from "cors";
 import express from "express";
 
-import { db } from "@registration-portal/db";
-import { sql } from "drizzle-orm";
+import { errorHandler } from "./errors/error-handler";
+import { getAuthRoutes } from "./routes/auth/routes";
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
-app.get("/health", (_req, res) => {
-  res.json({ ok: true, service: "api" });
-});
-
-app.get("/health/db", async (_req, res) => {
-  try {
-    await db.execute(sql`select 1`);
-    res.json({ ok: true, db: "postgres" });
-  } catch (error) {
-    const message =
-      error instanceof Error ? error.message : "Unknown database error";
-    res.status(500).json({ ok: false, message });
-  }
-});
+app.use("/auth", getAuthRoutes());
+app.use(errorHandler);
 
 const port = Number(process.env.API_PORT ?? 8080);
 

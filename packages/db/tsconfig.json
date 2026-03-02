@@ -1,7 +1,7 @@
 {
-  "extends": "@registration-portal/tsconfig/node.json",
+  "extends": "@nexus/tsconfig/node.json",
   "compilerOptions": {
-    "rootDir": "src"
+    "rootDir": "."
   },
   "include": ["src/**/*.ts", "drizzle.config.ts"]
 }

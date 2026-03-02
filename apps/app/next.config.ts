@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  transpilePackages: ["@registration-portal/ui"],
+  transpilePackages: ["@nexus/ui"],
 };
 
 export default nextConfig;

@@ -1,11 +1,13 @@
 {
-  "name": "@registration-portal/ui",
+  "name": "@nexus/ui",
   "private": true,
   "version": "0.0.1",
   "type": "module",
   "exports": {
     "./card": "./src/components/ui/card.tsx",
     "./button": "./src/components/ui/button.tsx",
+    "./input": "./src/components/ui/input.tsx",
+    "./field": "./src/components/ui/field.tsx",
     "./utils": "./src/lib/utils.ts"
   },
   "scripts": {
@@ -18,8 +20,8 @@
     "tailwind-merge": "^2.5.5"
   },
   "devDependencies": {
-    "@registration-portal/eslint": "workspace:*",
-    "@registration-portal/tsconfig": "workspace:*",
+    "@nexus/eslint": "workspace:*",
+    "@nexus/tsconfig": "workspace:*",
     "@types/node": "^22.10.1",
     "@types/react": "^19.0.2",
     "eslint": "^8.57.0",

@@ -1,5 +1,5 @@
 {
-  "name": "@registration-portal/db",
+  "name": "@nexus/db",
   "private": true,
   "version": "0.0.1",
   "type": "module",
@@ -16,15 +16,18 @@
     "db:push": "drizzle-kit push",
     "db:studio": "drizzle-kit studio",
     "db:up": "docker compose up -d",
-    "db:down": "docker compose down"
+    "db:down": "docker compose down",
+    "wait-for-db": "while ! nc -z localhost 5432; do sleep 1; done",
+    "seed": "bun wait-for-db && DATABASE_URL=postgres://postgres:postgres@localhost:5432/registration_portal bun run src/seedDb.ts"
   },
   "dependencies": {
+    "bcryptjs": "^3.0.3",
     "drizzle-orm": "^0.45.1",
     "pg": "^8.13.1"
   },
   "devDependencies": {
-    "@registration-portal/eslint": "workspace:*",
-    "@registration-portal/tsconfig": "workspace:*",
+    "@nexus/eslint": "workspace:*",
+    "@nexus/tsconfig": "workspace:*",
     "@types/node": "^22.10.1",
     "@types/pg": "^8.11.10",
     "drizzle-kit": "^0.31.8",

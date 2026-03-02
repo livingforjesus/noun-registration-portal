@@ -7,7 +7,7 @@ import Link from "next/link";
 import { type ComponentType, type FC, useState } from "react";
 import { CirclePlay } from "lucide-react";
 
-import { Card, CardContent } from "@registration-portal/ui/card";
+import { Card, CardContent } from "@nexus/ui/card";
 import {
   admissionToggleIcon,
   homeMenu,

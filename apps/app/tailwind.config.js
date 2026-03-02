@@ -1,7 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
-  content: ["./src/**/*.{ts,tsx}", "../../packages/ui/src/**/*.{ts,tsx}"],
+  content: [
+    "./src/**/*.{ts,tsx}",
+    "../../packages/ui/src/**/*.{ts,tsx}",
+    "./node_modules/@nexus/ui/src/**/*.{ts,tsx}",
+  ],
   theme: {
     extend: {
       colors: {
@@ -14,6 +18,7 @@ module.exports = {
         accent: "hsl(var(--accent))",
         muted: "hsl(var(--muted))",
         border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
         surface: "hsl(var(--surface))",
       },
       borderRadius: {

@@ -5,6 +5,8 @@ import { Source_Sans_3 } from "next/font/google";
 
 import { type FC } from "react";
 
+import { Providers } from "@/app/_components/providers";
+
 const sourceSans = Source_Sans_3({
   subsets: ["latin"],
   weight: ["400", "600", "700", "800"],
@@ -21,7 +23,9 @@ interface RootLayoutProps {
 
 const RootLayout: FC<RootLayoutProps> = ({ children }) => (
   <html lang="en">
-    <body className={sourceSans.className}>{children}</body>
+    <body className={sourceSans.className}>
+      <Providers>{children}</Providers>
+    </body>
   </html>
 );
 

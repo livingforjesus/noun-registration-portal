@@ -11,7 +11,7 @@
     "prefix": ""
   },
   "aliases": {
-    "components": "@registration-portal/ui",
-    "utils": "@registration-portal/ui/utils"
+    "components": "@nexus/ui",
+    "utils": "@nexus/ui/utils"
   }
 }

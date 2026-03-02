@@ -1,5 +1,5 @@
 {
-  "name": "@registration-portal/app",
+  "name": "@nexus/app",
   "private": true,
   "version": "0.0.1",
   "scripts": {
@@ -10,17 +10,25 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@registration-portal/ui": "workspace:*",
+    "@tanstack/react-query": "^5.66.11",
+    "@hookform/resolvers": "^3.10.0",
+    "@nexus/api-types": "workspace:*",
+    "@nexus/ui": "workspace:*",
+    "axios": "^1.8.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.468.0",
     "next": "^15.1.0",
+    "next-auth": "5.0.0-beta.29",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "tailwind-merge": "^2.5.5"
+    "react-hook-form": "^7.54.2",
+    "sonner": "^1.7.4",
+    "tailwind-merge": "^2.5.5",
+    "zod": "^3.24.1"
   },
   "devDependencies": {
-    "@registration-portal/eslint": "workspace:*",
-    "@registration-portal/tsconfig": "workspace:*",
+    "@nexus/eslint": "workspace:*",
+    "@nexus/tsconfig": "workspace:*",
     "@types/node": "^22.10.1",
     "@types/react": "^19.0.2",
     "@types/react-dom": "^19.0.2",

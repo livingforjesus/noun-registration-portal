@@ -11,6 +11,15 @@ export const Routes = {
   CONVOCATION: "/convocation",
   SUPPORT: "/support",
   STAFF: "/staff",
+  STAFF_SIGN_UP: "/staff/sign-up",
+  STAFF_RESET_PASSWORD: "/staff/reset-password",
+  STAFF_DASHBOARD: "/staff-dashboard",
+  STAFF_DASHBOARD_FACULTY: "/staff-dashboard/faculty",
+  STAFF_DASHBOARD_FACULTY_SUBITEM_1: "/staff-dashboard/faculty/subitem-1",
+  STAFF_DASHBOARD_FACULTY_SUBITEM_2: "/staff-dashboard/faculty/subitem-2",
+  STAFF_DASHBOARD_REGISTRY: "/staff-dashboard/registry",
+  STAFF_DASHBOARD_REGISTRY_SUBITEM_1: "/staff-dashboard/registry/subitem-1",
+  STAFF_DASHBOARD_REGISTRY_SUBITEM_2: "/staff-dashboard/registry/subitem-2",
 
   ELINK_ANDROID:
     "https://play.google.com/store/apps/details?id=ng.edu.nou.elink&hl=en",

@@ -1,5 +1,5 @@
 {
-  "name": "@registration-portal/tsconfig",
+  "name": "@nexus/tsconfig",
   "private": true,
   "version": "0.0.1",
   "files": [
